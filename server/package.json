@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend server for Night City After Dark",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MosNes/night-city-after-dark.git"
+  },
+  "author": "MosNes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MosNes/night-city-after-dark/issues"
+  },
+  "homepage": "https://github.com/MosNes/night-city-after-dark#readme"
+}
