@@ -151,6 +151,25 @@ const characterSchema = new Schema({
             'Blocked'
         ]
     },
+    //5th trauma box that can be unlocked w/ Hardened crew upgrade
+    trauma5: {
+        type: String,
+        required: false,
+        default: 'Locked',
+        enum: [
+            'None',
+            'Cold',
+            'Haunted',
+            'Obsessed',
+            'Paranoid',
+            'Reckless',
+            'Soft',
+            'Unstable',
+            'Vicious',
+            'Blocked',
+            'Locked'
+        ]
+    },
     harmThree: {
         type: String,
         required: false,
@@ -348,6 +367,12 @@ const characterSchema = new Schema({
         min: 0,
         max: 4
     },
+    contacts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Contact'
+        }
+    ]
 });
 
 
