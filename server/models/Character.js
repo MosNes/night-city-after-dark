@@ -201,9 +201,153 @@ const characterSchema = new Schema({
     abilities: [
         {
             type: Schema.Types.ObjectId,
-            
+            ref: 'Ability'
+        },
+    ],
+    veteranAbilities: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Ability'
         }
-    ]
+    ],
+    playbookItems: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Item'
+        }
+    ],
+    genericItems: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Item'
+        }
+    ],
+    eddies: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    stash: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 40
+    },
+    playbookXP: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 8
+    },
+    insightXP: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 6
+    },
+    prowessXP: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 6
+    },
+    resolveXP: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 6
+    },
+    huntSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    studySkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    surveySkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    tinkerSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    finesseSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    prowlSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    skirmishSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    wreckSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    interfaceSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+   commandSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    consortSkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
+    swaySkill: {
+        type: Number,
+        default: 0,
+        required: false,
+        min: 0,
+        max: 4
+    },
 });
 
 
