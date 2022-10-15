@@ -26,12 +26,6 @@ const userSchema = new Schema({
             ref: 'Character'
         }
     ],
-    crews: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'Crew',
-    }
-    ]
 });
 
 // set up pre-save middleware to create password

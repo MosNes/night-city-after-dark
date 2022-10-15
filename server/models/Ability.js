@@ -29,7 +29,8 @@ const abilitySchema = new Schema({
             'Media',
             'Fixer',
             'Lawman',
-            'Nomad'
+            'Nomad',
+            'Custom'
         ]
     }
 

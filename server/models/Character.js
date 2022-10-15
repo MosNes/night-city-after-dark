@@ -372,9 +372,37 @@ const characterSchema = new Schema({
             type: Schema.Types.ObjectId,
             ref: 'Contact'
         }
-    ]
+    ],
+    friendlyContacts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Contact'
+        }
+    ],
+    rivalContacts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Contact'
+        }
+    ],
+    equippedItems: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Item'
+        }
+    ],
+    load: {
+        type: String,
+        default: 'None',
+        required: false,
+        enum: [
+            'None',
+            'Light',
+            'Normal',
+            'Heavy'
+        ]
+    },
 });
-
 
 const Character = mongoose.model('Character', characterSchema);
 

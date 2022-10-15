@@ -83,6 +83,12 @@ const crewSchema = new Schema({
             ref: 'Turf'
         }
     ],
+    ownedTurf: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Turf'
+        }
+    ],
     heat: {
         type: Number,
         default: 0,
