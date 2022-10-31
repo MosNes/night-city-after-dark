@@ -1,9 +1,10 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import PrimeVue from 'primevue/config';
+import vuetify from './plugins/vuetify'
+import { loadFonts } from './plugins/webfontloader'
 
+loadFonts()
 
 createApp(App)
-.use(PrimeVue)
-.mount('#app')
+  .use(vuetify)
+  .mount('#app')
