@@ -1,0 +1,1 @@
+//placeholder for character global store
