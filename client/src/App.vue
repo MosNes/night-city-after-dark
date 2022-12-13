@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <Character />
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import Character from '@/views/Character.vue'
+
+  
 </script>
