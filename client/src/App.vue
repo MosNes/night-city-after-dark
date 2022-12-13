@@ -9,5 +9,5 @@
 <script setup>
   import Character from '@/views/Character.vue'
 
-  
+
 </script>
